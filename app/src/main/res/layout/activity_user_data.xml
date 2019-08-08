@@ -14,7 +14,7 @@
 
         <EditText
             android:gravity="center_horizontal"
-            android:id="@+id/edtTextName"
+            android:id="@+id/edtFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Your Firstname"
@@ -23,6 +23,7 @@
             android:textColorHint="#616161" />
 
         <EditText
+            android:id="@+id/edtSurname"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
@@ -36,7 +37,7 @@
 
     <EditText
         android:gravity="center_horizontal"
-        android:id="@+id/edtTextPhoneNumber"
+        android:id="@+id/edtAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -48,6 +49,7 @@
         android:textColorHint="#616161" />
 
     <EditText
+        android:id="@+id/edtPhoneNumber"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,6 +63,7 @@
 
 
     <EditText
+        android:id="@+id/edtAddress"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,6 +73,7 @@
         android:textColorHint="#616161" />
 
     <Button
+        android:id="@+id/btnReview"
         android:textColor="#e0e0e0"
         android:layout_marginTop="30dp"
         android:text="review"

@@ -18,6 +18,7 @@
         android:textSize="15dp" />
 
     <EditText
+        android:id="@+id/edtEnterPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -27,6 +28,7 @@
         android:textColor="#757575" />
 
     <ImageButton
+        android:id="@+id/btnCall"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center"

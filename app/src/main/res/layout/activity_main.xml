@@ -11,6 +11,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgProfilePhoto"
         android:layout_gravity="center_horizontal"
         android:background="#0000"
         android:src="@drawable/profile2"
@@ -18,6 +19,7 @@
         android:layout_height="300dp" />
 
     <Button
+        android:id="@+id/btnViewProfile"
         android:textColor="#2196f3"
         android:background="#212121"
         android:text="View Profile"
@@ -26,6 +28,7 @@
         android:layout_height="70dp" />
 
     <Button
+        android:id="@+id/btnVerifyPhoneNumber"
         android:textColor="#4caf50"
         android:background="#212121"
         android:text="verify your number!"
