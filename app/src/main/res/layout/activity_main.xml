@@ -11,30 +11,31 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:layout_marginTop="30dp"
         android:id="@+id/imgProfilePhoto"
         android:layout_gravity="center_horizontal"
         android:background="#0000"
-        android:src="@drawable/profile2"
+        android:src="@drawable/profile3"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="400dp" />
 
     <Button
         android:id="@+id/btnViewProfile"
-        android:textColor="#2196f3"
-        android:background="#212121"
+        android:textColor="#fff"
+        android:background="#2196f3"
         android:text="View Profile"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="70dp" />
+        android:layout_height="80dp" />
 
     <Button
         android:id="@+id/btnVerifyPhoneNumber"
-        android:textColor="#4caf50"
-        android:background="#212121"
+        android:textColor="#fff"
+        android:background="#4daf50"
         android:text="verify your number!"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="70dp" />
+        android:layout_height="80dp" />
 
 
 

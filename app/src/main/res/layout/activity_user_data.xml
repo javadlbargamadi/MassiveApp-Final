@@ -73,13 +73,23 @@
         android:textColorHint="#616161" />
 
     <Button
-        android:id="@+id/btnReview"
+        android:id="@+id/btnNext"
         android:textColor="#e0e0e0"
         android:layout_marginTop="30dp"
-        android:text="review"
+        android:text="next"
         android:background="#212121"
         android:layout_width="match_parent"
         android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/txtSavedMessage"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="#8bc34a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

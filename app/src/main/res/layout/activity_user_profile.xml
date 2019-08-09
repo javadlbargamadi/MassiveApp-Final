@@ -125,21 +125,22 @@
         android:orientation="horizontal">
         <Button
             android:layout_marginEnd="5dp"
-            android:textColor="#4caf50"
-            android:background="#212121"
-            android:id="@+id/btnConfirm"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="70dp"
-            android:text="Confirm" />
-        <Button
-            android:textColor="#ffeb3b"
+            android:textColor="#fff"
             android:background="#212121"
             android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="70dp"
             android:text="Edit" />
+        <Button
+            android:textColor="#2196f3"
+            android:background="#212121"
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:text="Confirm" />
+
     </LinearLayout>
 
 
