@@ -12,7 +12,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,17 +21,18 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtEnteredFirstName"
+            android:id="@+id/txtFirstName_UserProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#e0e0e0"
             android:textSize="20sp" />
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtEnteredSurName"
+            android:id="@+id/txtSurName_UserProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -51,10 +51,11 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +66,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/txtEnteredAge"
+            android:id="@+id/txtAge_UserProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -73,10 +74,11 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,9 +87,8 @@
             android:text="Phone number : "
             android:textColor="#616161"
             android:textSize="20sp" />
-
         <TextView
-            android:id="@+id/txtEnteredPhoneNumber"
+            android:id="@+id/txtPhoneNumber_UserProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -95,10 +96,10 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,9 +108,8 @@
             android:text="Address : "
             android:textColor="#616161"
             android:textSize="20sp" />
-
         <TextView
-            android:id="@+id/txtEnteredAddress"
+            android:id="@+id/txtAddress_UserProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -117,31 +117,32 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/btnEdit_UserProfile"
             android:layout_marginEnd="5dp"
             android:textColor="#fff"
             android:background="#212121"
-            android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="70dp"
             android:text="Edit" />
         <Button
+            android:id="@+id/btnConfirm_UserProfile"
             android:textColor="#2196f3"
             android:background="#212121"
-            android:id="@+id/btnConfirm"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="70dp"
             android:text="Confirm" />
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>

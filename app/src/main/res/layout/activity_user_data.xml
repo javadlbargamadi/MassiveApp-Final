@@ -12,32 +12,32 @@
 
 
 
-        <EditText
-            android:gravity="center_horizontal"
-            android:id="@+id/edtFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Your Firstname"
-            android:inputType="text"
-            android:textColor="#e0e0e0"
-            android:textColorHint="#616161" />
+    <EditText
+        android:id="@+id/edtFirstName_UserData"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Firstname"
+        android:inputType="text"
+        android:textColor="#e0e0e0"
+        android:textColorHint="#616161"
+        />
 
-        <EditText
-            android:id="@+id/edtSurname"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Your Surname"
-            android:inputType="text"
-            android:textColor="#e0e0e0"
-            android:textColorHint="#616161" />
-
+    <EditText
+        android:id="@+id/edtSurName_UserData"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Surname"
+        android:inputType="text"
+        android:textColor="#e0e0e0"
+        android:textColorHint="#616161" />
 
 
     <EditText
+        android:id="@+id/edtAge_UserData"
         android:gravity="center_horizontal"
-        android:id="@+id/edtAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -48,13 +48,15 @@
         android:textColor="#e0e0e0"
         android:textColorHint="#616161" />
 
+
+
+
     <EditText
-        android:id="@+id/edtPhoneNumber"
+        android:id="@+id/edtPhoneNumber_UserData"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_toEndOf="@+id/edtTextPhoneNumber"
         android:hint="Your Phone Number (with +98)"
         android:inputType="phone"
         android:maxLength="13"
@@ -62,8 +64,9 @@
         android:textColorHint="#616161" />
 
 
+
     <EditText
-        android:id="@+id/edtAddress"
+        android:id="@+id/edtAddress_UserData"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,8 +75,9 @@
         android:textColor="#e0e0e0"
         android:textColorHint="#616161" />
 
+
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnNext_UserData"
         android:textColor="#e0e0e0"
         android:layout_marginTop="30dp"
         android:text="next"
@@ -82,7 +86,7 @@
         android:layout_height="70dp" />
 
     <TextView
-        android:id="@+id/txtSavedMessage"
+        android:id="@+id/txtSuccessMessage_UserData"
         android:gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
@@ -90,6 +94,5 @@
         android:textColor="#8bc34a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
 </LinearLayout>

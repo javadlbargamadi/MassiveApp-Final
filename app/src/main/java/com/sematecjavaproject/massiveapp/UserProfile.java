@@ -2,6 +2,7 @@ package com.sematecjavaproject.massiveapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -12,71 +13,68 @@ import android.widget.TextView;
 
 public class UserProfile extends AppCompatActivity {
 
-    private Button btnEdit_UserProfile;
-    private Button btnConfirm_UserProfile;
-    private TextView txtSavedMessage_UserProfile;
+    private TextView txt_UserProfile;
+    private Button var_btnEdit_UserProfile;
+    private Button var_btnConfirm_UserProfile;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        TextView varTextView_txtFirstName_UserProfile = (TextView) findViewById(R.id.txtFirstName_UserProfile);
+        TextView varTextView_txtSurName_UserProfile = (TextView) findViewById(R.id.txtSurName_UserProfile);
+        TextView varTextView_txtAge_UserProfile = (TextView) findViewById(R.id.txtAge_UserProfile);
+        TextView varTextView_txtPhoneNumber_UserProfile = (TextView) findViewById(R.id.txtPhoneNumber_UserProfile);
+        TextView varTextView_txtAddress_UserProfile = (TextView) findViewById(R.id.txtAddress_UserProfile);
+
+        Intent intent = getIntent();
+
+        String varString_FirstName_UserProfile  = intent.getStringExtra("firstName");
+        String varString_SurName_UserProfile   = intent.getStringExtra("surName");
+        String varString_Age_UserProfile = intent.getStringExtra("age");
+        String varString_PhoneNumber_UserProfilene = intent.getStringExtra("phoneNumber");
+        String varString_Address_UserProfile = intent.getStringExtra("address");
 
 
-        Button btnEdit = (Button) findViewById(R.id.btnEdit);
-        btnEdit.setOnClickListener(new View.OnClickListener() {
+        varTextView_txtFirstName_UserProfile.setText(varString_FirstName_UserProfile);
+        varTextView_txtSurName_UserProfile.setText(varString_SurName_UserProfile);
+        varTextView_txtAge_UserProfile.setText(varString_Age_UserProfile);
+        varTextView_txtPhoneNumber_UserProfile.setText(varString_PhoneNumber_UserProfilene);
+        varTextView_txtAddress_UserProfile.setText(varString_Address_UserProfile);
+
+
+        Button var_btnEdit_UserProfile = (Button) findViewById(R.id.btnEdit_UserProfile);
+        var_btnEdit_UserProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i2 = new Intent(UserProfile.this, UserData.class);
-                startActivity(i2);
+                Intent i = new Intent(UserProfile.this, UserData.class);
+                startActivity(i);
                 finish();
             }
         });
 
-
-
-        Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
-        btnConfirm.setOnClickListener(new View.OnClickListener() {
+        Button var_btnConfirm_UserProfile = (Button) findViewById(R.id.btnConfirm_UserProfile);
+        var_btnConfirm_UserProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String showMessage = "Your data saved successful...";
-                PreferenceManager.getDefaultSharedPreferences(UserProfile.this)
-                        .edit()
-                        .putString("username", showMessage)
-                        .apply();
 
-                Intent intent = new Intent(UserProfile.this, UserData.class);
-                startActivityForResult(intent, 1500);
-
-                Intent i3 = new Intent(UserProfile.this, UserData.class);
-                startActivity(i3);
-
+                String successMessage = "Your data save SUCCESSFULLY!";
+                Intent confirm = new Intent();
+                confirm.putExtra("Your data save SUCCESSFULLY!", successMessage);
+                setResult(Activity.RESULT_OK, confirm);
+                finish(); //BACK Button
             }
+
+            // PreferenceManager.getDefaultSharedPreferences(this).edit()
+            //   .putString("username", username).apply();
+
         });
+
+
+
+
     }
-
-
-
 }
-
-
-//    Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
-//    final TextView txtSavedMessage = (TextView) findViewById(R.id.txtSavedMessage);
-//
-//    String showMessage = PreferenceManager.getDefaultSharedPreferences(UserProfile.this)
-//            .getString("message","Your data in not saved yet...!");
-//        txtSavedMessage.setText(showMessage);
-//
-//                btnConfirm.setOnClickListener(new View.OnClickListener() {
-//@Override
-//public void onClick(View view) {
-//        String saveMessage = "Your data saved successful...!";
-//
-//        PreferenceManager.getDefaultSharedPreferences(UserProfile.this)
-//        .edit()
-//        .putString("message",saveMessage)
-//        .apply();
-//        Intent i3 = new Intent(UserProfile.this, UserData.class);
-//        startActivity(i3);
-//        }
-//        });
